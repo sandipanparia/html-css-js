@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+</head>
+<body>
+
+     <div class="red">
+        I am a div
+    <p>I am a para inside para</p>
+    </div>
+     <div id="green">I am a div</div>
+     <div class="blue">I am another div</div>
+    <a href="http://www.google.com">Open Google</a>
+    <a href="http://www.facebook1.com">Open Facebbok</a>
+</body>
+<style>
+    /* Element selector */
+    div{
+        background-color: aqua;
+    }
+     /* class selector */
+    .red{
+        background-color: aqua; color: brown;
+    }
+    .blue{
+        background-color: rgb(205, 124, 187);color: blue;
+    }
+     /* id selector */
+
+     #green {
+        background-color: rgb(18, 100, 49);
+     }
+     /* child selector */
+     
+     div>p{
+        background-color: blueviolet;color: rgb(240, 37, 190);
+     }
+
+     /* Descendent selector */
+     div p{
+        color: blueviolet;
+        background-color: rgb(26, 135, 172);
+     }
+     /* universal selector */
+     *{
+        margin: 0;
+        padding: 0;
+     }
+
+     /* pseudo selector */
+     a:visited{
+        color: yellow;
+     }
+     a:link{
+        color: green;
+     }
+     a:active{
+        background-color: pink;
+     }
+     a:hover{
+        background-color: yellow;
+     }
+     p:first-child{
+        background-color: chartreuse;
+     }
+  
+
+</style>
+<main class = "selector">
+<p>I am First</p>
+<p>I am second</p>
+</main>
+</html>

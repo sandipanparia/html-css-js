@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        @media screen and (orientation: landscape) {
+            body{
+
+            
+          border:2px solid purple;
+        }
+    }
+        @media only screen and (max-width: 455px){
+          body{
+            background-color: blue;
+
+        }
+            
+        }
+        .boxes{
+            /* display: flex; */
+            flex-direction: column;
+        }
+        .box{
+            border: 2px solid black;
+            margin: 3px;padding: 3px;
+           
+            width: 144px;
+            height: 344px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque impedit odio, unde assumenda amet.</div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+
+</body>
+</html>

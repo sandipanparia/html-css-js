@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Priority</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            height: 133px;
+            width: 80vw;
+            margin: 3px;
+            padding: 3px;
+
+        }
+        .box1{
+            background-color: aqua ;
+            position:sticky;
+            top: 0px;
+            height: 111px;
+            width: 100%;
+            margin: 0;padding: 0;}
+            /* top:px;left: 88px;
+        } */
+        .box2{
+            background-color: blue;
+            /* top: px; */
+        }
+        .box3{ 
+            background-color: #9d2727;
+             position: fixed;
+            bottom: 0px;
+            left: 8vw;
+            height: 111px;
+        
+        }
+        .box4{
+            background-color: blueviolet;
+        }
+        .parents{
+            border: 2px solid black;
+            height: 133px;
+            width: 80vw;
+            margin: 34px;
+            padding: 43px;
+
+            /* position: absolute;          transform , filter, or perspective propertis can also make an element appera as positioned */
+                /* position: absolute; */
+            /* left: 13px; */
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parents">
+    <div class=" box box1"></div>
+    <div class=" box box2"></div>
+    <div class=" box box3"></div>
+    <div class=" box box4"></div>
+</div>
+</body>
+</html>
